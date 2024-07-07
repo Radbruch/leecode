@@ -1,0 +1,22 @@
+class Solution3 {
+    public static int maxSubarrayLength(int[] nums, int k) {
+        int L = 0;
+        int R = 0;
+        int bestresult = 0;
+        Map<int, int> map = new HashMap<int, int>();
+        int n = nums.length;
+
+        while (R < n) {
+            int R_number = nums[R];
+            if (!map.containsKey(R_number)) {
+                R_count = 0;
+            } else {
+            R_count = map.get(R_number)+1;
+            }
+
+            while (R_count > k) {
+
+            }
+            map.merge
+        }
+    }
