@@ -2,65 +2,37 @@ import java.util.Arrays;
 
 class Solution {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        if (nums1.length < nums2.length) {
-            return findMedian(nums1, nums2);
+        int m = nums1.length;
+        int n = nums2.length;
+        if (m > n) {
+            return findMedianSortedArrays(nums2, nums1);
         }
-        else {
-            return findMedian(nums2, nums1);
-        }
 
+        int total_left = (m+n+1)/2;
+        int L_i = 0;
+        int R_i = m;
 
-    }
-
-    private static double findMedian(int[] shortnums, int[] longnums) {
-        // 短
-        int L_s = 0;
-        int R_s = shortnums.length-1;
-
-        // 长
-        int L_l = 0;
-        int R_l = longnums.length-1;
-
-        while (L_s <= R_s) {
-            int mids = L_s + (R_s - L_s) / 2;
-            int midl = L_l + (R_l - L_l) / 2;
-
-            double midnumber_s = mid(shortnums, L_s, R_s);
-            double midnumber_l = mid(longnums, L_l, R_l);
-            if (L_s == R_s) {
-                int[] newnums = new int[2+R_l-L_l];
-                for (int i = 0; i < R_l-L_l+1; i++) {
-                    newnums[i] = longnums[i+L_l];
-                }
-                newnums[R_l-L_l+1] = shortnums[L_s];
-                Arrays.sort(newnums);
-                return mid(newnums, 0, newnums.length-1);
-
-            }
-            if (midnumber_s < midnumber_l) {
-                int diff = mids + 1 - L_s;
-                L_s = mids + 1;
-                R_l -= diff;
-            }
-            else if (midnumber_s > midnumber_l) {
-                int diff = R_s - mids;
-                R_s = mids;
-                L_l += diff;
+        while (L_i < R_i) {
+            int i = (L_i+R_i) / 2; // nums1的index，nums1选中了前i个数
+            int j = total_left - i; // nums2的index，nums2选中了前j个数
+            if (nums1[i] < nums2[j-1]) {
+                L_i = i + 1;
             }
             else {
-                return midnumber_s;
+                R_i = i;
             }
         }
-        return -1;
-    }
+        int i = L_i;
+        int j = total_left - i;
 
-    private static double mid(int[] nums, int L, int R) {
-        int n = R - L + 1;
-        if (n % 2 == 0) {
-            return ((nums[(L+R)/2] + nums[(L+R)/2+1]) / 2.0);
-        }
-        else {
-            return nums[((L+R)/2)];
+        int nums1LeftMax = i == 0 ? Integer.MIN_VALUE : nums1[i - 1];
+        int nums2LeftMax = j == 0 ? Integer.MIN_VALUE : nums2[j - 1];
+        int nums1RightMin = i == m ? Integer.MAX_VALUE : nums1[i];
+        int nums2RightMin = j == n ? Integer.MAX_VALUE : nums2[j];
+        if ((m + n) % 2 == 1) {
+            return Math.max(nums1LeftMax, nums2LeftMax);
+        } else {
+            return (Math.max(nums1LeftMax, nums2LeftMax) + Math.min(nums1RightMin, nums2RightMin)) / 2.0;
         }
     }
 }
