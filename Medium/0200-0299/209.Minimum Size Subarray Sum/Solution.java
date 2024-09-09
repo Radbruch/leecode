@@ -1,23 +1,24 @@
 import java.util.Arrays;
 
-public class Solution {
-
+class Solution {
     public static int minSubArrayLen(int target, int[] nums) {
-        int length = nums.length;
+        int minAnswer = Integer.MAX_VALUE;
         int L = 0;
+        // int R = 0;
+        int n = nums.length;
         int sum = 0;
-        int ans = length+1;
-        for (int R = 0; R < length; R++) {
+        int maxSum = 0;
+        for (int R = 0; R < n; R++) {
             sum += nums[R];
-            while (L <= length -1 && sum - nums[L] >= target ) {
-                    sum -= nums[L];
-                    L++;
-            }
-            if (sum >= target) { //当sum大于target才需要更新ans
-              ans = Math.min(ans, R-L+1);
+            maxSum += nums[R];
+
+            while (sum >= target) {
+                minAnswer = Math.min(minAnswer, R-L+1);
+                sum -= nums[L];
+                L++;
             }
         }
-        if (ans <= length) return ans;
-        else return 0;
+
+        return maxSum >= target ? minAnswer: 0;
     }
 }
