@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 class Solution {
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 1) return 1;
         char[] ch = s.toCharArray();
         int maxnum = 0;

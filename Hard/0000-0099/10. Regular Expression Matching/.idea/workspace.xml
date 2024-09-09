@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32832e14-da95-4879-b2fc-9c212062f25a" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0003.Longest Substring Without Repeating Characters/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0003.Longest Substring Without Repeating Characters/Solution3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0003.Longest Substring Without Repeating Characters/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0022. Generate Parentheses/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0022. Generate Parentheses/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0049. Group Anagrams/.idea/0049. Group Anagrams.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0049. Group Anagrams/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0053. Maximum Subarray/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0055. Jump Game/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/.idea/0056. Merge Intervals.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0056. Merge Intervals/Solution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0072. Edit Distance/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0100-0199/198. House Robber/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Medium/0200-0299/215. Kth Largest Element in an Array/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Simple/0200-0299/206. Reverse Linked List/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Simple/0200-0299/206. Reverse Linked List/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Simple/0200-0299/206. Reverse Linked List/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Medium/0000-0099/0003.Longest Substring Without Repeating Characters/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Medium/0000-0099/0003.Longest Substring Without Repeating Characters/Solution.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2lJYouDzaWkQc6w9Y84ULxb0nCz" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Code/leecode/Hard/0000-0099/0032. Longest Valid Parentheses",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.300" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="32832e14-da95-4879-b2fc-9c212062f25a" name="更改" comment="" />
+      <created>1724899827289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724899827289</updated>
+      <workItem from="1724899830132" duration="9375000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
